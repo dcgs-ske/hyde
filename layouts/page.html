@@ -1,0 +1,31 @@
+<!-- This is the template - aka layout - that every page, blog post, etc. will be based on. -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>
+      {% if page.title %} {{ page.title }} - {% endif %}
+      My Amazing Site
+    </title>
+
+    <link rel='stylesheet' href='/css/style.css'>
+  </head>
+
+  <body>
+    <nav>
+      <h1>
+        <a href='/'>
+          My Amazing Site
+        </a>
+      </h1>
+
+      <a href='/blog/'>
+        Blog
+      </a>
+    </nav>
+
+    <main>
+      {{ content }}
+    </main>
+  </body>
+</html>

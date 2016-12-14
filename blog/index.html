@@ -1,0 +1,19 @@
+---
+# This is NOT A BLOG POST. It's actually the page that *lists* the blog posts!
+
+title: Blog
+layout: page
+---
+
+{% assign pages = site.pages | sort: "number" %}
+<ul>
+  {% for page in pages %}
+    {% if page.number %}
+      <li>
+        <a href='{{ page.url }}'>
+          {{ page.title }}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

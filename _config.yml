@@ -1,0 +1,19 @@
+baseurl: "" # if you're hosting under a project repo, put it's url here
+
+layouts_dir: layouts
+permalink: /:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+gems:
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENCE
+  - readme.md
+  - CNAME
